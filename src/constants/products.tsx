@@ -1,11 +1,7 @@
-import sidefolioAceternity from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAceternity2 from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAlgochurn from "public/images/sidefolio-algochurn.png";
-import sidefolioAlgochurn2 from "public/images/sidefolio-algochurn.png";
-import sidefolioMoonbeam from "public/images/sidefolio-moonbeam.png";
-import sidefolioMoonbeam2 from "public/images/sidefolio-moonbeam-2.png";
-import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
-import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
+import matlab from "public/images/matlab.png";
+import cardify from "public/images/cardify.png";
+import imdb from "public/images/imdb.png";
+import helpbot from "public/images/helpbot.png";
 
 export const products = [
   {
@@ -13,8 +9,8 @@ export const products = [
     title: "MATLAB Hero",
     description:
       "A dedicated learning platform centered around mastering MATLAB.",
-    thumbnail: sidefolioAceternity,
-    images: [sidefolioAceternity, sidefolioAceternity2],
+    thumbnail: matlab,
+    images: [matlab, matlab],
     stack: ["Nextjs", "Tailwindcss"],
     slug: "aceternity",
     content: (
@@ -33,8 +29,8 @@ export const products = [
     title: "IMDB-Sentiment-Analysis",
     description:
       "Practice for technical interviews with hands on coding challenges.",
-    thumbnail: sidefolioAlgochurn,
-    images: [sidefolioAlgochurn, sidefolioAlgochurn2],
+    thumbnail: imdb,
+    images: [imdb, imdb],
     stack: ["Python", "NLTK", "scykit-learn"],
     slug: "algochurn",
     content: (
@@ -59,8 +55,8 @@ export const products = [
     title: "Cardify",
     description:
       "Cardify is a flashcard application built with Next.js. It allows users to create, view, and manage flashcards to help with studying and learning.",
-    thumbnail: sidefolioMoonbeam,
-    images: [sidefolioMoonbeam, sidefolioMoonbeam2],
+    thumbnail: cardify,
+    images: [cardify, cardify],
     stack: ["Nextjs", "Tailwindcss", "Firebase"],
     slug: "moonbeam",
     content: (
@@ -89,8 +85,8 @@ export const products = [
     title: "HelpBot",
     description:
       "AI customer support Chatbot",
-    thumbnail: sidefolioTailwindMasterKit,
-    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
+    thumbnail: helpbot,
+    images: [helpbot, helpbot],
     stack: ["Nextjs", "Tailwindcss"],
     slug: "tailwindmasterkit",
     content: (

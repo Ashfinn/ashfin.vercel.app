@@ -12,19 +12,19 @@ export const TechStack = () => {
       className: "h-10 w-14",
     },
     {
-      title: "AWS",
+      title: "Python",
       src: "/images/logos/aws.webp",
 
       className: "h-10 w-10",
     },
     {
-      title: "Figma",
+      title: "Tensorflow",
       src: "/images/logos/figma.png",
 
       className: "h-10 w-8",
     },
     {
-      title: "Framer Motion",
+      title: "Pytorch",
       src: "/images/logos/framer.webp",
 
       className: "h-10 w-10",

@@ -18,7 +18,7 @@ export default function Home() {
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
         Currently a 2nd-year Math Major with a{" "}
-        <Highlight>strong experience in Computer Science and</Highlight> and a focus on using Machine Learning to solve global challenges.
+        <Highlight>strong experience in Computer Science</Highlight> and a focus on using Machine Learning to solve global challenges.
       </Paragraph>
       <Heading
         as="h2"
