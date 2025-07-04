@@ -10,10 +10,10 @@ import { MoreWork } from './components/MoreWork'; // Already correct, but remove
 // Main Home Page Component
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <FeaturedProjects />
       <MoreWork />
-    </>
+    </main>
   );
 }

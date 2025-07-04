@@ -65,7 +65,7 @@ const coreValues = [
 // --- Main About Page Component ---
 export default function About() {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white font-sans text-gray-800">
+    <div className="font-sans text-gray-800">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24">
         
         {/* --- INTRO SECTION --- */}
@@ -77,7 +77,7 @@ export default function About() {
             </h1>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
               <p>
-                I'm a Computer Science student with a focus on machine learning and data science, 
+                I'm a Mathematics student with a focus on ML, DL and Data Science, 
                 particularly in healthcare applications and environmental analysis.
               </p>
               <p>
@@ -86,7 +86,7 @@ export default function About() {
                 for developing AI solutions that address real-world challenges in developing regions.
               </p>
               <p>
-                My research focuses on lightweight machine learning models that can run on edge devices, 
+                My research focuses on lightweight Deep Learning models that can run on edge devices, 
                 making advanced diagnostics accessible in resource-constrained environments. I believe 
                 in the power of combining rigorous research with practical implementation to create 
                 meaningful change.

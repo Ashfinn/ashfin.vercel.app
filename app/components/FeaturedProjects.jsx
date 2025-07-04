@@ -53,7 +53,7 @@ export const ProjectCard = ({ title, description, imageUrl, logoUrl, link }) => 
           alt={`${title} project preview`}
           width={1200}
           height={750}
-          className="object-cover w-full h-auto"
+          className="object-cover max-w-7xl w-full h-auto"
         />
       </div>
       <div className="flex items-center gap-4 mb-3">
