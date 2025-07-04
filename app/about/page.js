@@ -77,19 +77,13 @@ export default function About() {
             </h1>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
               <p>
-                I'm a Mathematics student with a focus on ML, DL and Data Science, 
-                particularly in healthcare applications and environmental analysis.
+                Growing up in Bangladesh, I was captivated by two powerful forces: the elegant logic of mathematics and the tangible impact of technology on my community. I witnessed firsthand how innovation could bridge gaps in healthcare access and environmental monitoring, and this experience ignited my passion.
               </p>
               <p>
-                Growing up in Bangladesh, I witnessed firsthand how technology can bridge gaps in 
-                healthcare access and environmental monitoring. This experience fueled my passion 
-                for developing AI solutions that address real-world challenges in developing regions.
+                Today, as a Mathematics student at the University of Chittagong, my journey is dedicated to that intersection of theory and impact. My mission is to build data-driven solutions that address real-world challenges. I thrive on translating abstract statistical models and ML algorithms into functional code, with a special focus on developing lightweight Deep Learning models for healthcare and environmental science. My goal is to create AI that can run on edge devices, making advanced diagnostics and analysis accessible in even the most resource-constrained environments.
               </p>
               <p>
-                My research focuses on lightweight Deep Learning models that can run on edge devices, 
-                making advanced diagnostics accessible in resource-constrained environments. I believe 
-                in the power of combining rigorous research with practical implementation to create 
-                meaningful change.
+                This drive extends beyond my personal research. I founded The Code Forum to build a thriving tech community and serve as the Research and Development Secretary at the Chittagong University Math Club to inspire others. For me, mathematics and technology are not just academic pursuits; they are the tools we use to discover, to build, and to invent a more equitable and sustainable future.
               </p>
             </div>
           </div>
