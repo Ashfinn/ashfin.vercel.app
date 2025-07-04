@@ -7,6 +7,11 @@ const moreWorkProjects = [
     link: 'https://ashfinn.github.io/',
   },
   {
+    title: 'the-code-forum',
+    imageUrl: '/code-forum.png',
+    link: 'https://the-code-forum.github.io/website/',
+  },
+  {
     title: 'HelpBot',
     imageUrl: '/helpbot-public.png',
     link: 'https://help-bot-beta.vercel.app/',
@@ -25,7 +30,7 @@ const moreWorkProjects = [
     title: 'Pixel-Craft',
     imageUrl: '/pixel-craft.png',
     link: 'https://ashfinn.github.io/Pixel-Craft/',
-  },
+  }
 ];
 
 // "More Work" Section

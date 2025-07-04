@@ -29,10 +29,10 @@ const Footer = () => {
           {/* Left Column: Brand, Tagline, and Copyright */}
           <div className="space-y-4 text-center md:text-left">
             <h2 className="text-2xl font-bold text-slate-800">
-              Obidur Rahman
+              thanks for stopping by! ✿
             </h2>
             <p className="text-slate-600 max-w-md mx-auto md:mx-0">
-              Made with care, caffeine, and a good playlist.
+              made with care, caffeine, and a good playlist.
             </p>
             <p className="text-sm text-slate-400 pt-4">
               © {new Date().getFullYear()} Obidur Rahman. All Rights Reserved.

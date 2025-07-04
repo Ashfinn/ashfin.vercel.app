@@ -1,71 +1,71 @@
 // src/app/about/page.js
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRightIcon, AcademicCapIcon, BeakerIcon, ChartBarIcon } from '@heroicons/react/24/solid';
+import { 
+  ChevronRightIcon, 
+  AcademicCapIcon, 
+  BeakerIcon, 
+  ChartBarIcon,
+  UsersIcon,
+  CalculatorIcon,
+  VideoCameraIcon,
+  ArrowUpRightIcon,
+} from '@heroicons/react/24/solid';
 
-// --- Data for the page ---
-const leadershipRoles = [
+// --- UNIFIED DATA FOR EXPERIENCE & LEADERSHIP ---
+const allRoles = [
+  // Existing experience roles with images
   {
-    title: 'Research Assistant',
-    role: 'Machine Learning & Data Science',
-    imageUrl: '/research-role.png',
+    title: 'Founder & Community Lead',
+    role: 'The Code Forum',
+    description: 'Built a thriving tech community of 100+ members and established 5 comprehensive learning paths.',
+    imageUrl: '/code-forum.png',
     icon: BeakerIcon,
     color: 'blue',
   },
   {
-    title: 'Teaching Assistant',
-    role: 'Data Structures & Algorithms',
-    imageUrl: '/teaching-role.png',
+    title: 'Content Creator & Educator',
+    role: 'Online Platforms',
+    description: 'Created 10+ educational videos and 13 articles on ML & Python, gaining over 1000 reads.',
+    imageUrl: '/logo.png',
     icon: AcademicCapIcon,
     color: 'green',
   },
   {
-    title: 'Project Lead',
-    role: 'Healthcare Analytics Initiative',
-    imageUrl: '/leadership-role.png',
+    title: 'R&D Secretary',
+    role: 'Chittagong University Math Club',
+    description: 'Led research initiatives and organized events bridging academic theory with practical application.',
+    imageUrl: '/cumc.png',
     icon: ChartBarIcon,
     color: 'purple',
-  },
+  }
+];
+
+
+const socialLinks = [
+    { name: 'Email', description: 'The most reliable way to get in touch for formal inquiries.', handle: 'obidur.shawal@gmail.com', href: 'mailto:obidur.shawal@gmail.com' },
+    { name: 'LinkedIn', description: 'Connect with me for professional networking and career updates.', handle: '@obidur-rahman-shawal', href: 'https://www.linkedin.com/in/obidur-rahman-shawal/' },
+    { name: 'GitHub', description: 'Follow my coding projects, contributions, and technical work.', handle: '@Ashfinn', href: 'https://github.com/Ashfinn' },
+    { name: 'Facebook', description: 'Personal updates and community engagement.', handle: '@obidur.shawal', href: 'https://www.facebook.com/obidur.shawal' },
 ];
 
 const projectPhotos = [
-  {
-    caption: 'Presenting our tomato disease classification model at the research symposium',
-    imageUrl: '/presentation-1.png',
-  },
-  {
-    caption: 'Collaborating with team members on environmental health data analysis',
-    imageUrl: '/collaboration-1.png',
-  },
-  {
-    caption: 'Field work collecting data for our Bangladesh healthcare study',
-    imageUrl: '/fieldwork-1.png',
-  },
+  { caption: 'Presenting our tomato disease classification model at the research symposium', imageUrl: '/presentation-1.png' },
+  { caption: 'Collaborating with team members on environmental health data analysis', imageUrl: '/collaboration-1.png' },
+  { caption: 'Field work collecting data for our Bangladesh healthcare study', imageUrl: '/fieldwork-1.png' },
 ];
 
 const coreValues = [
-  {
-    value: 'Always stay curious and keep learning',
-    color: 'text-blue-600',
-  },
-  {
-    value: 'Approach every problem with scientific rigor',
-    color: 'text-green-600',
-  },
-  {
-    value: 'Design solutions that make a real-world impact',
-    color: 'text-purple-600',
-  },
-  {
-    value: 'Collaborate with empathy and respect',
-    color: 'text-orange-600',
-  }
+  { value: 'Always stay curious and keep learning', color: 'text-blue-600' },
+  { value: 'Approach every problem with scientific rigor', color: 'text-green-600' },
+  { value: 'Design solutions that make a real-world impact', color: 'text-purple-600' },
+  { value: 'Collaborate with empathy and respect', color: 'text-orange-600' }
 ];
 
 // --- Main About Page Component ---
 export default function About() {
   return (
-    <div className="font-sans text-gray-800">
+    <div className="font-sans text-gray-800 bg-white">
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24">
         
         {/* --- INTRO SECTION --- */}
@@ -104,7 +104,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* --- EXPERIENCE SECTION --- */}
+        {/* --- EXPERIENCE & LEADERSHIP SECTION (MERGED) --- */}
         <section className="mb-16 sm:mb-20 lg:mb-24">
           <div className="flex items-center gap-3 mb-4 sm:mb-6">
             <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1"></div>
@@ -114,35 +114,38 @@ export default function About() {
             <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1"></div>
           </div>
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-6 sm:mb-8 text-center">
-            Building expertise through research and collaboration.
+            Building expertise through research, community, and collaboration.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {leadershipRoles.map((role) => {
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10">
+            {allRoles.map((role) => {
               const Icon = role.icon;
               const colorClasses = {
-                blue: 'bg-blue-50 text-blue-600 group-hover:bg-blue-100',
-                green: 'bg-green-50 text-green-600 group-hover:bg-green-100',
-                purple: 'bg-purple-50 text-purple-600 group-hover:bg-purple-100',
+                blue: 'from-blue-500 to-indigo-600',
+                green: 'from-green-500 to-emerald-600',
+                purple: 'from-purple-500 to-violet-600',
               };
               
               return (
                 <div key={role.title} className="group cursor-pointer">
                   <div className="relative bg-white rounded-xl overflow-hidden mb-3 sm:mb-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     <div className="aspect-[4/3] relative">
-                      <Image
-                        src={role.imageUrl}
-                        alt={role.title}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                      <div className={`absolute top-4 right-4 p-2 rounded-lg ${colorClasses[role.color]} transition-colors`}>
-                        <Icon className="w-5 h-5" />
-                      </div>
+                      {role.imageUrl ? (
+                        <>
+                          <Image src={role.imageUrl} alt={role.title} fill className="object-cover" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        </>
+                      ) : (
+                        <div className={`flex items-center justify-center bg-gradient-to-br ${colorClasses[role.color]}`}>
+                          <Icon className="w-16 h-16 text-white/80" />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <h3 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base group-hover:text-gray-900 transition-colors">{role.title}</h3>
-                  <p className="text-gray-600 text-xs sm:text-sm">{role.role}</p>
+                  <p className="text-gray-600 text-xs sm:text-sm font-medium mb-1.5">{role.role}</p>
+                  {role.description && (
+                     <p className="text-gray-500 text-xs sm:text-sm leading-snug">{role.description}</p>
+                  )}
                 </div>
               );
             })}
@@ -241,6 +244,34 @@ export default function About() {
         </section>
         
       </main>
+
+      {/* --- FOOTER SECTION --- */}
+      <footer className="bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">        
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <div className="lg:col-span-2">
+              <h3 className="text-2xl sm:text-3xl font-medium mb-3">Let's Build Something</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Have a project in mind or just want to connect? I'm always open to new ideas and collaborations. Reach out through one of my channels.
+              </p>
+            </div>
+            <div className="lg:col-span-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+                {socialLinks.map((link) => (
+                  <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer" className="group">
+                    <div className="flex justify-between items-center mb-1">
+                       <h4 className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">{link.name}</h4>
+                       <ArrowUpRightIcon className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-all group-hover:translate-x-1 group-hover:-translate-y-1"/>
+                    </div>
+                    <p className="text-sm text-gray-600 mb-2">{link.description}</p>
+                    <p className="text-sm text-blue-600/80 font-mono break-all">{link.handle}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
