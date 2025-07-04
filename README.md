@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 ashfin.vercel.app
 
-## Getting Started
+This is my personal website built with **Next.js** and **Tailwind CSS**, designed to showcase my work, academic background, and interests in mathematics, machine learning, and emerging technologies.
 
-First, run the development server:
+🔗 **Live site:** [ashfin.vercel.app](https://ashfin.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📌 About Me
+
+I'm **Obidur Rahman**, a Mathematics student at the University of Chittagong with a passion for:
+
+- Artificial Intelligence & Machine Learning
+- Mathematical Modeling & Systems
+- Web Technologies and Visual Design
+
+This website serves as my digital portfolio — highlighting my **projects**, **skills**, and personal journey in tech and science.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js** – React framework for SSR and routing
+- **Tailwind CSS** – Utility-first styling
+- **Vercel** – Deployment and hosting
+- **Framer Motion** – Animations and transitions
+- **Heroicons** – SVG icons for UI
+- **React Icons** – Additional icons
+
+---
+
+## 📁 Project Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+/app
+└── components/   # Reusable React components
+└── resume/       # Resume page
+└── projects/     # Projects showcase
+└── (other pages)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+public/
+└── images, favicon, assets
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+tailwind.config.js
+next.config.js
 
-## Learn More
+````
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Running Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run the site locally:
 
-## Deploy on Vercel
+```bash
+git clone https://github.com/your-username/ashfin-site.git
+cd ashfin-site
+npm install
+npm run dev
+````
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Then visit: [http://localhost:3000](http://localhost:3000)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📬 Contact
+
+Feel free to connect with me:
+
+* 📧 [obidurrahmanxyz@gmail.com](mailto:obidurrahmanxyz@gmail.com)
+* 🐦 [Twitter/X](https://twitter.com/yourusername) *(if you want to add)*
+* 💼 [LinkedIn](https://linkedin.com/in/yourusername)
+
+---
+
+## 📝 License
+
+This project is open-source under the [MIT License](LICENSE).
